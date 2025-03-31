@@ -1,20 +1,9 @@
+import {GET} from "@/app/api/articles/route";
 
 
-export default function Home() {
+export default async function Home() {
 
-
-
-    function printEnvs() {
-        [
-            process.env.DB_USER,
-            process.env.DB_PORT,
-            process.env.DB_PASSWORD,
-        ].map(variable => (
-            console.log(variable)
-        ))
-    }
-
-    printEnvs()
+    const data = await GET()
 
   return (
     <div>
