@@ -14,12 +14,11 @@ export default function Home() {
         ))
     }
 
+    printEnvs()
 
   return (
     <div>
         It works now
-
-        <button onClick={printEnvs}>PRINT</button>
     </div>
   );
 }
